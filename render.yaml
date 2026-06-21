@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ebanx-balance
+    runtime: docker
+    plan: free
+    numInstances: 1
+    healthCheckPath: /up
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: CACHE_STORE
+        value: array
+      - key: SESSION_DRIVER
+        value: array
+      - key: LOG_CHANNEL
+        value: stderr
