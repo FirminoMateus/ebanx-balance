@@ -17,11 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Cookie\Middleware\EncryptCookies::class,
         ]);
-
-        $middleware->preventRequestForgery(except: [
-            'reset',
-            'event',
-        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
