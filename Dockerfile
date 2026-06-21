@@ -16,7 +16,6 @@ RUN composer dump-autoload --optimize \
     && mkdir -p storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chmod -R 777 storage bootstrap/cache
 
-ENV APP_KEY=base64:IsM/LLiovno0y6E5TLHZMcOvNCscvg4jxkeEZpdt5CI=
 ENV APP_ENV=production
 ENV APP_DEBUG=false
 ENV CACHE_STORE=array
