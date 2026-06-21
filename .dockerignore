@@ -1,0 +1,8 @@
+/vendor
+/node_modules
+.env
+.git
+.gitignore
+/storage/app/accounts.json
+/storage/logs/*.log
+.phpunit.result.cache
