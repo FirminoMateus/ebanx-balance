@@ -18,7 +18,7 @@ RUN composer dump-autoload --optimize \
 
 ENV APP_KEY=base64:IsM/LLiovno0y6E5TLHZMcOvNCscvg4jxkeEZpdt5CI=
 ENV APP_ENV=production
-ENV APP_DEBUG=true
+ENV APP_DEBUG=false
 ENV CACHE_STORE=array
 ENV SESSION_DRIVER=array
 ENV LOG_CHANNEL=stderr
