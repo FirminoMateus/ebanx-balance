@@ -54,9 +54,15 @@ class AccountRepository
 
     private function persist(array $accounts): void
     {
+        $directory = dirname($this->storagePath);
+
+        if (!is_dir($directory)) {
+            mkdir($directory, 0777, true);
+        }
+
         file_put_contents(
             $this->storagePath,
             json_encode($accounts),
         );
-    }
+    } 
 }
