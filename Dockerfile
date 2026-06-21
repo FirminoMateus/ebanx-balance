@@ -17,7 +17,7 @@ RUN composer dump-autoload --optimize \
     && chmod -R 777 storage bootstrap/cache
 
 ENV APP_ENV=production
-ENV APP_DEBUG=false
+ENV APP_DEBUG=true
 ENV CACHE_STORE=array
 ENV SESSION_DRIVER=array
 ENV LOG_CHANNEL=stderr
