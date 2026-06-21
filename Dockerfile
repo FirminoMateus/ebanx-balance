@@ -22,4 +22,4 @@ ENV CACHE_STORE=array
 ENV SESSION_DRIVER=array
 ENV LOG_CHANNEL=stderr
 
-CMD php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
+CMD php artisan optimize:clear && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
